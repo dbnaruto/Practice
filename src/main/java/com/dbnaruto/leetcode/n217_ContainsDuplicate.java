@@ -13,11 +13,11 @@ public class n217_ContainsDuplicate {
     //-------------------------------------------------------
     public static boolean containsDuplicate(int[] nums) {
 
-        Set<Integer> numsSet = new HashSet<Integer>();
+        Set<Integer> numsSet = new HashSet<>();
 
         if (nums.length > 1) {
             for (int i = 0; i < nums.length; i++) {
-                if (numsSet.add(nums[i]) == true) {
+                if (numsSet.add(nums[i])) {
                     numsSet.add(nums[i]);
                 } else {
                     return true;
