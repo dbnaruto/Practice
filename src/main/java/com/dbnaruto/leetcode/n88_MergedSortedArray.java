@@ -13,14 +13,19 @@ import java.util.Arrays;
 public class n88_MergedSortedArray {
     //-------------------------------------------------------
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
-        if (m != 0) {
-            for (int i = 0; i < nums1.length - m; i++) {
-                nums1[i + m] = nums2[i];
-            }
-        } else {
-            System.arraycopy(nums2, 0, nums1, 0, nums2.length);
-        }
+//        if (m != 0) {
+//            for (int i = 0; i < nums1.length - m; i++) {
+//                nums1[i + m] = nums2[i];
+//            }
+//        } else {
+//            System.arraycopy(nums2, 0, nums1, 0, nums2.length);
+//        }
+//
+//        Arrays.sort(nums1);
 
+        // Is it lazy or is it smart to just simplify and use the built-in functions?
+        // ¯\_(ツ)_/¯
+        System.arraycopy(nums2, 0, nums1, m, n);
         Arrays.sort(nums1);
     }
     //-------------------------------------------------------
