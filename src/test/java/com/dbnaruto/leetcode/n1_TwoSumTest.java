@@ -2,10 +2,11 @@ package test.java.com.dbnaruto.leetcode;
 
 import main.java.com.dbnaruto.leetcode.n1_TwoSum;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 class n1_TwoSumTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testContainsDuplicate() {
 
         int[] nums = {2,7,11,15};
@@ -15,7 +16,7 @@ class n1_TwoSumTest {
         Assertions.assertArrayEquals(result, expected);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testContainsDuplicate_2() {
 
         int[] nums = {3,2,4};
@@ -25,7 +26,7 @@ class n1_TwoSumTest {
         Assertions.assertArrayEquals(result, expected);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testContainsDuplicate_3() {
 
         int[] nums = {3,3};
@@ -35,7 +36,7 @@ class n1_TwoSumTest {
         Assertions.assertArrayEquals(result, expected);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testContainsDuplicate_FirstWrong() {
 
         // j should have = i+1 not a hardcoded 1
@@ -46,7 +47,7 @@ class n1_TwoSumTest {
         Assertions.assertArrayEquals(result, expected);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testContainsDuplicate_SecondWrong() {
 
         // 0 is a number
@@ -57,7 +58,7 @@ class n1_TwoSumTest {
         Assertions.assertArrayEquals(result, expected);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testContainsDuplicate_ThirdWrong() {
 
         // If checking value is "less than" target, must use absolute value to accommodate negative ints

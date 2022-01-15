@@ -2,12 +2,13 @@ package test.java.com.dbnaruto.leetcode;
 
 import main.java.com.dbnaruto.leetcode.n88_MergedSortedArray;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
 class n88_MergedSortedArrayTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void merge() {
 
         int[] nums1 = {1, 2, 3, 0, 0, 0};
@@ -22,7 +23,7 @@ class n88_MergedSortedArrayTest {
         Assertions.assertArrayEquals(nums1, expected);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void merge_2() {
 
         int[] nums1 = {1};
@@ -37,7 +38,7 @@ class n88_MergedSortedArrayTest {
         Assertions.assertArrayEquals(nums1, expected);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void merge_3() {
 
         int[] nums1 = {0};
@@ -52,7 +53,7 @@ class n88_MergedSortedArrayTest {
         Assertions.assertArrayEquals(nums1, expected);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void merge_FirstWrong() {
 
         int[] nums1 = {4, 0, 0, 0, 0, 0};

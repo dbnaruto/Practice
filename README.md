@@ -9,4 +9,6 @@ I use the following materials to study with:
 
 The solutions are sorted by the questions source, and then named in a way to indicate which question it answers.
 
-I use the Javadocs to record the original name, question, and difficulty.
+I use the Javadocs to record the original name, question, and difficulty. 
+
+Libraries are handled locally by IntelliJ. This project does not have Maven or Gradle dependency management.
